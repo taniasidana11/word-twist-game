@@ -43,6 +43,4 @@ Challenge your mind by reconstructing scrambled words before time runs out! ⏳
 - 📱 Improve **responsive design** for all screen sizes  
 - 🔊 Add **sound effects** and **background music** for immersion  
 
----
 
-### 💻 Developed with ❤️ using HTML, CSS, and JavaScript
