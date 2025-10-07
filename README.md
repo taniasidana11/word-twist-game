@@ -1,56 +1,28 @@
-🎯 Twisted Words Game
+Twisted Words Game
+Welcome to the Scrambled/twisted Words Game! This game challenges you to reconstruct a scrambled word.
 
-Welcome to Twisted Words, a fun and challenging word unscrambling game that puts your vocabulary and reflexes to the test!
-Can you guess the correct word before time runs out? Let’s find out! 💡
+Features
+User-friendly interface for a seamless gaming experience
+Time limit for added excitement and pressure
+Increasing difficulty levels for uninterrupted fun
+Persistent scores to keep track of your progress
+Installation
+No installation is required! Simply open the provided name.html file in a web browser and start playing or click on the following link. - ( https://kamakship18.github.io/word-twist-game/front-page/name.html )
 
-🚀 Game Overview
+How to Play
+Select a difficulty level: Easy, Medium, or Hard
+The scrambled word will be displayed. Try to guess the original word.
+Type your guess in the provided text box and click "check word"
+If your guess is correct, the scrambled word will be replaced with a new one. If incorrect, you will be prompted to try again.
+Continue playing until the time limit runs out or you achieve a high score.
+Go through all the levels and the score will add up in the end page until you refresh.
+Tech Stack
+HTML: Used for creating the structure of the webpage
+CSS: Used for styling the webpage
+JavaScript: Used for implementing the game logic
+Screenshot
+Click here to view screenshot
 
-Twisted Words (also known as Scrambled Words) challenges you to reconstruct jumbled words within a time limit.
-Each level increases in difficulty, keeping the gameplay exciting and engaging!
-
-🌟 Features
-
-✅ Interactive and user-friendly interface — smooth design for effortless play
-⏰ Built-in timer — adds thrill and urgency to each round
-⚡ Multiple difficulty levels — Easy, Medium, and Hard modes for all skill levels
-🏆 Score tracking — your total score is saved across levels
-🎮 No installation needed — just open and play instantly in your browser
-
-🕹️ How to Play
-
-Choose your difficulty level — Easy, Medium, or Hard.
-
-You’ll see a scrambled word on the screen.
-
-Type your best guess in the input box and click “Check Word.”
-
-✅ Correct guess: You’ll earn points and get a new word!
-
-❌ Wrong guess: Try again before time runs out.
-
-Your total score adds up across all levels until you refresh the page.
-
-🧠 Tech Stack
-
-HTML → Structures the webpage layout
-
-CSS → Styles and animations for a polished look
-
-JavaScript → Game logic, scoring, and interactivity
-
-🖼️ Preview / Play Online
-
-🔗 Play Now: Twisted Words Game
-
-📸 Screenshot: [Click here to view screenshot]
-
-🔮 Future Enhancements
-
-✨ Add new word categories for more variety
-📱 Improve mobile responsiveness for all devices
-💾 Option to save scores locally
-🎨 Add themes or background animations for visual appeal
-
-💬 Contributors
-
-Developed with 💖 and creativity by the team.
+Future Improvements
+Additional word categories for variety
+More responsive design for different screen sizes
