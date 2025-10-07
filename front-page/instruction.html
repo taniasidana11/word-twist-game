@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrambled Words Game</title>
+</head>
+<body>
+    <audio src='./../assests/8-bit-background-music-for-arcade-game-come-on-mario-164702.mp3' style="display: none;" autoplay loop preload="auto"></audio>
+    <div class="heading">
+        <h1>INSTRUCTIONS </h1>
+</div>
+
+    <section class="instructions"><p>
+Click on the "Let's Begin" button to begin the game.
+Select the level which you are comfortable with.
+Unscramble the letters to form a valid word.<br>
+TIME LIMIT:
+You have max 30 seconds to unscramble each word and 1 minute for a level. After a mintue page the game 
+will end and you'll be presented with your scores.
+Type your answer into the text input box.
+Make sure your word is correctly spelled.<br>
+CHECKING THE ANSWER:
+Click on the "Check Word" button to validate your answer.
+Need a new challenge? Click on the "New Word" button to get a new scrambled word.
+The game continues until you run out of time or successfully unscramble all words.
+SCORE: <br>
+Score will be displayed at the right side. +10 points for every correct answer.
+-END GAME button will be present in the right bottom of the page 
+which will redirect to the level selection page.<br>
+            
+Best of luck!</p> 
+<a href="../front-page/index.html"><button class="lets-begin">Let's Begin</button></a>
+</section> 
+
+
+<style> 
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('https://gifdb.com/images/high/pastel-sky-background-3garh8rnc14jym78.gif');
+    background-size: cover;
+    z-index: -2;
+    font-weight: 600;
+}
+
+.heading h1 { 
+    text-align: center; 
+    top: 3vh;
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(24, 17, 17);
+    font-family: 'Unicorn Regular';
+    text-shadow: 2px 2px rgb(19, 16, 16);
+    background: -webkit-linear-gradient(red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.instructions { 
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.lets-begin {
+    background-color: rgb(235, 162, 213);
+    color: rgb(7, 6, 6);
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+@media screen and (width:360px) {
+    .heading h1{
+        font-size: 47px;
+    }
+    .instructions{
+        font-size: 14px;
+    }
+    
+}
+
+
+    </style>
+
+    </body>
+    </html>
