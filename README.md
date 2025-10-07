@@ -14,13 +14,6 @@ Challenge your mind by reconstructing scrambled words before time runs out! ⏳
 
 ---
 
-## 🚀 Play Now
-
-👉 **[Play the Game Here!](https://kamakship18.github.io/word-twist-game/front-page/name.html)**  
-*(No installation required — just open the link in your browser!)*
-
----
-
 ## 🕹️ How to Play
 
 1. Choose a **difficulty level** — *Easy*, *Medium*, or *Hard*  
@@ -43,12 +36,6 @@ Challenge your mind by reconstructing scrambled words before time runs out! ⏳
 
 ---
 
-## 🖼️ Screenshot
-
-🖼️ *Click below to view the game interface:*  
-👉 [View Screenshot](#)  
-
----
 
 ## 💡 Future Improvements
 
