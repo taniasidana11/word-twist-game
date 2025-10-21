@@ -1,0 +1,84 @@
+/* Body styles with animated gradient background */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Animated gradient background */
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    margin-bottom: 5vh; /* spacing above buttons */
+}
+
+.heading h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Unicorn Regular', Arial, sans-serif;
+    text-shadow: 2px 2px rgba(0,0,0,0.4);
+    background: linear-gradient(to right, #ffec61, #f321d7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Level buttons container */
+.play-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* wraps on smaller screens */
+}
+
+/* Common button styles */
+button {
+    font-size: 22px; 
+    padding: 20px 35px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+    min-width: 150px; /* consistent width */
+    text-align: center;
+}
+
+/* Hover effect */
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* Level-specific colors */
+.level-1 {
+    background-color: #ffb347;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.level-2 {
+    background-color: #6ceee3;
+    color: #000;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+
+.level-3 {
+    background-color: #ff7eb3;
+    color: #fff;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}

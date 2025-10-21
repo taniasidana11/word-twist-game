@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWISTED WORDS</title>
+
+</head>
+<body> 
+    <audio src='./../assests/8-bit-background-music-for-arcade-game-come-on-mario-164702.mp3' style="display: none;" autoplay loop preload="auto"></audio>
+    <h1>TWISTED WORDS</h1>
+    <div class="container">
+
+        <form id="player-info-form">
+            <label for="player-name">Enter your name:</label>
+            <input type="text" id="player-name" name="playerName" required>
+            <br>
+            <label for="player-nickname">Enter your nickname:</label>
+            <input type="text" id="player-nickname" name="playerNickname" required>
+            <br>
+            <button type="submit">Start Game</button>
+        </form>
+
+        <a href="instruction.html" style="display: none;" id="start-game-link"></a>
+    </div>
+
+<script>
+        const playerInfoForm = document.querySelector('#player-info-form');
+    const startGameLink = document.querySelector('#start-game-link');
+
+playerInfoForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const playerName = document.getElementById('player-name').value;
+    const playerNickname = document.getElementById('player-nickname').value;
+
+    localStorage.setItem('playerName', playerName);
+    localStorage.setItem('playerNickname', playerNickname);
+
+    startGameLink.style.display = 'block';
+    startGameLink.click();
+    // const bgn = new Audio('./../assests/8-bit-background-music-for-arcade-game-come-on-mario-164702.mp3')
+    // window.onload=()=>{  
+    //     bgn.play()
+    //     bgn.loop = true
+    // }
+});
+    </script>
+
+<style>
+body {
+
+    font-family: Arial, sans-serif; 
+    background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDI2N2l1dmE3emgxbDBrM2loYmZscmdrMHpnMDE0YWMxMGVzbTdnZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GiXBNzilzkHH1GY7Vc/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+h1 { 
+text-align: center;
+position: relative;
+top: 5vh; 
+align-items: center;
+font-size: 80px;
+font-weight: bold;
+color: rgb(24, 17, 17);
+font-family: 'Unicorn Regular';
+text-shadow: 2px 2px rgb(19, 16, 16);
+background: -webkit-linear-gradient(red, blue);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+        
+.container { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 700;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        label {
+            color: #201616; 
+        }
+        input[type=text] { 
+            background-color: #dfa1a1;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #dfa1a1;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4cacaf; 
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #82e287;
+        }
+
+        @media screen and (width:360px){
+            h1{
+                font-size: 70px;
+            }
+            
+        }
+    </style>
+
+   </body>
+   </html>

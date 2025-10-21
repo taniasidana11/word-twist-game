@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrambled Words Game - Final Page</title>
+    <style>
+        /* Body styles with animated gradient background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* Animated gradient background */
+            background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        /* Heading styles */
+        .heading h1 { 
+            text-align: center; 
+            font-size: 80px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px rgba(0,0,0,0.4);
+            background: linear-gradient(to right, #ffec61, #f321d7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Score text */
+        #final {
+            text-align: center; 
+            margin-top: 5%;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 2px 2px rgba(0,0,0,0.3);
+            background: linear-gradient(to right, #42e695, #3bb2b8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Restart button */
+        .restart-game {  
+            background-color: #ffd6e0;
+            color: #333;
+            padding: 20px;
+            margin-top: 5%;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+            width: 30vw;
+            text-align: center;
+            transition: transform 0.2s, background-color 0.3s;
+            border-radius: 12px;
+        }
+
+        .restart-game:hover {
+            transform: scale(1.05);
+            background-color: #ffb6c1;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background music -->
+    <audio src="./../assests/8-bit-background-music-for-arcade-game-come-on-mario-164702.mp3" autoplay loop preload="auto" style="display:none;"></audio>
+
+    <!-- Heading -->
+    <div class="heading">
+        <h1>GAME END</h1>
+    </div>
+
+    <!-- Final score -->
+    <p id="final">YOUR SCORE IS</p> 
+
+    <!-- Restart button -->
+    <a href="./front-page/index.html">
+        <button class="restart-game">RESTART GAME</button>
+    </a> 
+
+    <script>
+        // Array of statements
+        const statements = [
+            "glad you tried",
+            "check out other levels",
+            "keep going",
+            "keep up with the words",
+            "done with this level? check out the other ones"
+        ];
+
+        // Display score and random statement on load
+        window.onload = () => {
+            const name = localStorage.getItem('playerName') || "Player";
+            const score = localStorage.getItem('score') || 0;
+            const randomStatement = statements[Math.floor(Math.random() * statements.length)];
+            document.getElementById("final").innerHTML = `${name}, your score is ${score}, ${randomStatement}`;
+        }
+    </script>
+
+</body>
+</html>

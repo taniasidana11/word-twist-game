@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Word Twist Game</title>
+    <link rel="stylesheet" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+  <body> 
+    <span id="time"></span>
+    <audio src='./../assests/8-bit-background-music-for-arcade-game-come-on-mario-164702.mp3' style="display: none;" autoplay loop preload="auto"></audio>
+    <div class="container">
+        <h2>LEVEL 1</h2>
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">Hint: <span></span></p>
+                <p class="time">Time Left: <span><b>30</b>s</span></p>
+            </div>
+            <input type="text" spellcheck="false" placeholder="Enter a value">
+            <div class="buttons">
+                <button class="new-word">New Word</button>
+                <button class="check-word">Check Word</button>
+            
+            </div>
+        </div>
+    </div> 
+    <div class="score-container">
+      <button id="score">0</span>
+  </div>
+  <a href="../index.html"><button id="end-game">END GAME</button></a>
+  </body>
+</html>
+<script src="js/words1.js" defer></script>
+<script src="js/script1.js" defer></script>
