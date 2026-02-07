@@ -9,10 +9,6 @@ Welcome to the Scrambled/twisted Words Game! This game challenges you to reconst
 - Increasing difficulty levels for uninterrupted fun
 - Persistent scores to keep track of your progress
 
-## Installation
-
-No installation is required! Simply open the provided name.html file in a web browser and start playing or click on the following link. - ( https://kamakship18.github.io/word-twist-game/front-page/name.html )
-
 ## How to Play
 
 1. Select a difficulty level: Easy, Medium, or Hard
@@ -36,3 +32,4 @@ No installation is required! Simply open the provided name.html file in a web br
 
 - Additional word categories for variety
 - More responsive design for different screen sizes
+
